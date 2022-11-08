@@ -1,0 +1,22 @@
+{
+  "name": "Instituto Mancala",
+  "short_name": "Mancala",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#06092b",
+  "description": "A Mancala é um instituto que visa a pesquisa, desenvolvimento e divulgação de ciência e tecnologia nas perspectivas negra e indígena",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
