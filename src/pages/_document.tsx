@@ -18,11 +18,15 @@ export default class MyDocument extends Document {
         originalRenderPage({
           enhanceApp: (App) =>
             function enhance(props) {
-              return sheet.collectStyles(<App {...props} />);
+              return sheet.collectStyles(
+                <App {...props} />
+              );
             }
         });
 
-      const initialProps = await Document.getInitialProps(ctx);
+      const initialProps = await Document.getInitialProps(
+        ctx
+      );
       return {
         ...initialProps,
         styles: (

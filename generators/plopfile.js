@@ -12,22 +12,40 @@ module.exports = function (plop) {
       {
         type: 'add',
         path: '../src/components/{{pascalCase name}}/index.tsx',
-        templateFile: 'templates/index.tsx.hbs'
+        templateFile: 'templates/components/index.tsx.hbs'
       },
       {
         type: 'add',
         path: '../src/components/{{pascalCase name}}/styles.tsx',
-        templateFile: 'templates/styles.ts.hbs'
+        templateFile: 'templates/components/styles.ts.hbs'
+      }
+      // {
+      //   type: 'add',
+      //   path: '../src/components/{{pascalCase name}}/test.tsx',
+      //   templateFile: 'templates/test.tsx.hbs'
+      // }
+    ]
+  });
+
+  plop.setGenerator('page', {
+    description: 'Application Page',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'Page name?'
+      }
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: '../src/pages/{{kebabCase name}}/index.tsx',
+        templateFile: 'templates/pages/index.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/stories.tsx',
-        templateFile: 'templates/stories.tsx.hbs'
-      },
-      {
-        type: 'add',
-        path: '../src/components/{{pascalCase name}}/test.tsx',
-        templateFile: 'templates/test.tsx.hbs'
+        path: '../src/pages/{{kebabCase name}}/styles.tsx',
+        templateFile: 'templates/pages/styles.ts.hbs'
       }
     ]
   });

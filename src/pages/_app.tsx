@@ -1,8 +1,8 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import GlobalStyles from '../styles/global';
 import Navbar from '../components/Navbar/Navbar';
+import GlobalStyles from '../styles/global';
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -10,7 +10,10 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Insituto Mancala</title>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="description" content="Instituto Mancala" />
+        <meta
+          name="description"
+          content="Instituto Mancala"
+        />
       </Head>
 
       <GlobalStyles />

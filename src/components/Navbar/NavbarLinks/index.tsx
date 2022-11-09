@@ -6,10 +6,10 @@ const NavbarLinks = () => {
   return (
     <>
       <NavItem href="/">Início</NavItem>
-      <NavItem href="/sobre">Quem somos</NavItem>
-      <NavItem href="/projetos">Projetos</NavItem>
-      <NavItem href="/contato">Contato</NavItem>
-      <NavItem href="/doacao">Quero doar</NavItem>
+      <NavItem href="/about">Quem somos</NavItem>
+      <NavItem href="/projects">Projetos</NavItem>
+      <NavItem href="/contact">Contato</NavItem>
+      <NavItem href="/donate">Quero doar</NavItem>
     </>
   );
 };
