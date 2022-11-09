@@ -9,15 +9,18 @@
     "lint": "eslint src --max-warnings=0",
     "next:lint": "next lint",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "test": "jest",
-    "test:watch": "jest --watch",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{md}": [
+      "prettier --write",
+      "git add"
     ]
   },
   "dependencies": {

@@ -1,9 +1,6 @@
 import { Wrapper, Logo, Title, Description } from './styles';
 
-const Main = ({
-  title = 'Instituto Mancala',
-  description = 'Instituto Mancala'
-}) => (
+const Main = ({ title = 'Instituto Mancalaa', description = 'Instituto Mancalaa' }) => (
   <Wrapper>
     <Logo src="/img/nextjs.png" alt="Next.js" />
 
