@@ -3,27 +3,31 @@ import { useState } from 'react';
 import Logo from '../Logo';
 
 import NavbarLinks from '../NavbarLinks';
-import { Hamburger, Navbox, Navigation, Toggle } from './styles';
+import {
+  Hamburger,
+  Navbox,
+  Navigation,
+  Toggle
+} from './styles';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <Navigation>
-      {/* LOGO */}
       <Logo />
       <Toggle
-        // navbarOpen={navbarOpen}
+        //navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </Toggle>
       {navbarOpen ? (
-        <Navbox open>
+        <Navbox>
           <NavbarLinks />
         </Navbox>
       ) : (
-        <Navbox>
+        <Navbox open>
           <NavbarLinks />
         </Navbox>
       )}
